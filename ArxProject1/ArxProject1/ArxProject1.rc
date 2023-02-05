@@ -1,0 +1,164 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "ArxProject1 ObjectARX application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "ArxProject1"
+            VALUE "LegalCopyright", "Copyright ?2002"
+            VALUE "OriginalFilename", "hugoArxProject1.arx"
+            VALUE "ProductName", "ArxProject1 Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FindDccPath DIALOGEX 0, 0, 316, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DCC路径配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确定",IDOK,197,53,50,16
+    PUSHBUTTON      "取消",IDCANCEL,251,53,50,16
+    LTEXT           "路径",IDC_STATIC,18,25,18,14
+    EDITTEXT        IDC_EDITDccPath,44,22,198,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "选择",ID_BtnSelectDccPath,251,22,50,16
+END
+
+IDD_GRID DIALOGEX 0, 0, 423, 267
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "尺寸公差信息提取"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "退出",IDOK,359,244,50,14
+    CONTROL         "自定义1",IDC_GRID,"MfcGridCtrl",WS_TABSTOP,18,23,321,166
+    PUSHBUTTON      "添加",IDC_BTNPickDim,358,28,50,16
+    GROUPBOX        "要素信息",IDC_STATIC,7,9,337,195
+    GROUPBOX        "信息管理",IDC_STATIC,353,9,63,195
+    LTEXT           "文件路径",IDC_STATIC,25,223,43,9
+    EDITTEXT        IDC_EDITTextFilePath,62,220,243,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "......",IDC_BtnSelTxtSavePath,309,220,45,15
+    PUSHBUTTON      "保存",IDC_BtnSaveTextPathToJson,359,221,50,15
+    GROUPBOX        "信息管理",IDC_STATIC,7,211,409,29
+    PUSHBUTTON      "自动",IDC_BTNSelectCurDwg,358,54,50,16
+    PUSHBUTTON      "删除",IDC_BTNDeleteRcds,358,79,50,16
+    PUSHBUTTON      "切换",IDC_BTNSwitchTolRcd,358,103,50,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FindDccPath, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_GRID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 416
+        BOTTOMMARGIN, 260
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "ArxProject1"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
